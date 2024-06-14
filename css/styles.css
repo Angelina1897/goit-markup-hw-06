@@ -942,10 +942,6 @@ p {
     height: 56px;
     border: none;
 }
-.benefits {
-padding: 96px 0;
-column-gap: 24px;
-}
 
 .benefits-list {
     display: flex;
