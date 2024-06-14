@@ -1,13 +1,15 @@
-body {
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+@media screen and (min-width: 3840px) {
+    
+    body {
     font-family: "Roboto", sans-serif;
     background: #fff;
     color: #434455;
 }
 
-a {
-    text-decoration: none;
-    color: currentColor;
-}
 
 ul,
 ol {
@@ -26,7 +28,6 @@ p {
     margin: 0;
 }
 
-@media screen and (min-width: 3840px) {
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
