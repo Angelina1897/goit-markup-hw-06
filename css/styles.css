@@ -943,16 +943,13 @@ p {
     border: none;
 }
 .benefits {
-padding-top: 96px;
-    padding-bottom: 96px;
-    row-gap: 72px;
-    column-gap: 24px;
+padding: 96px 0;
+column-gap: 24px;
 }
 
 .benefits-list {
     display: flex;
     flex-direction: column;
-    width: calc((100% - 24px) / 2);
 }
 .benefits_item {
     font-weight: 500;
