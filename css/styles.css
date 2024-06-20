@@ -420,6 +420,11 @@ gap: 72px;
     margin-bottom: 8px;
 }
 /* < !-- <============PORTFOLIO============>--> */
+.portfolio-section {
+background: #fff;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -428,16 +433,13 @@ gap: 72px;
     color: #2e2f42;
     text-transform: capitalize;
     text-align: center;
-    margin: 0 auto;
     margin-bottom: 72px;
 }
 
 .portfolio-list {
-        flex-direction: row;
-            flex-wrap: wrap;
+        flex-direction: column;
             display: flex;
             gap: 48px;
-            margin: 0 auto;
 }
 
 .overlay-portfolio-img {
@@ -450,6 +452,7 @@ gap: 72px;
 }
 
 .portfolio-item {
+    width: 100%;
     background-color: #FFFFFF;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -480,9 +483,7 @@ gap: 72px;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    color: var(--slate);
-    margin: 0 auto;
-    padding: 32px 16px;
+    color: #434455;
 }
 
 .portfolio-subtext {
@@ -514,15 +515,16 @@ gap: 72px;
 }
 
 .footer-logo {
-    font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 117%;
-    letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #4d5ae5;
     margin-bottom: 17.5px;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-logo-part {
@@ -531,12 +533,11 @@ gap: 72px;
 
 .footer-container {
     display: flex;
-    align-items: center;
-    text-align: center;
+   flex-direction: column;
 }
 
 .footer-info-text-container {
- 
+margin-bottom: 72px;
 }
 
 .footer-social-media-text {
@@ -546,6 +547,9 @@ gap: 72px;
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-links {
@@ -589,6 +593,13 @@ gap: 72px;
 }
 
 .footer-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -610,19 +621,22 @@ gap: 72px;
 }
 
 .container-subscribe-footer {
-    margin-left: auto;
+padding-top: 72px;
 }
 
 .subscribe-text-subs {
+    font-weight: 500;
     font-size: 16px;
-    line-height: 2;
-    letter-spacing: 0.04em;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     margin-bottom: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 16px;
+display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .subscribe-text {
@@ -657,7 +671,9 @@ gap: 72px;
 
 .modal-form-subscribe {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 .footer-send-icon {
