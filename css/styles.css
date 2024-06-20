@@ -165,10 +165,17 @@ display: none;
 .open-menu-btn {
 display: none;
 }
-header-logo
+.header-logo {
+margin-right: 120px;
+padding: 24px 0;
+}
 .nav-list {
 display: flex;
 gap: 40px;
+}
+.contacts {
+display: block;
+    font-style: normal;
 }
 }
 /* < !--============HERO==============--> */
