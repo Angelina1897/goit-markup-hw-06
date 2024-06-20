@@ -190,9 +190,9 @@ p {
     background-color: #404bbf;
 }
 
-.benefits {
+/* .benefits {
     padding: 120px 0 120px;
-}
+} */
 
 .visually-hidden {
     position: absolute;
@@ -281,11 +281,6 @@ p {
     margin: 0 auto;
     text-align: top;
 } */ */
-
-/* .benefits-list {
-    display: flex;
-    gap: 24px;
-} */
 
 .section {
     padding: 120px 0;
@@ -984,13 +979,13 @@ line-height: 1.16;
     text-align: left;
 }
 .benefits-list {
-display: flex;
-flex-direction: column;
+flex-direction: row;
+flex-wrap: wrap;
 gap: 72px 24px;
 }
 
 .benefits_item {
-column-width: calc((100% - 24px) / 2);
+width: calc((100% - 24px) / 2);
 }
 }
 
