@@ -38,7 +38,7 @@ p {
 }
 @media screen and (min-width: 1158px) {
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
         padding: 0 15px;
     }
 }
@@ -761,6 +761,9 @@ flex-basis: calc((100% - 24px) / 2);
 }
 }
 @media screen and (min-width:1158px) {
+.portfolio-section {
+        padding: 120px 0;
+    }
 .portfolio-list {
 column-gap: 24px;
 row-gap: 48px;
