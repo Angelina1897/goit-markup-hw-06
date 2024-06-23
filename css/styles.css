@@ -240,11 +240,10 @@ font-size: 16px;
     letter-spacing: 0.02em;
     text-align: left;
 }
- }
+}
 /* < !--============HERO==============--> */
 .section-hero {
     background-color: #2e2f42;
-    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg); */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero-bg-mob.jpg);
     background-repeat: no-repeat;
@@ -300,7 +299,7 @@ height: 436px;
 background-image: linear-gradient(to bottom,
 rgba(46, 47, 66, 0.7),
 rgba(46, 47, 66, 0.7)),
-url(/images/hero-bg-tablet.jpg);
+url(../images/hero-bg-tablet.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -321,7 +320,7 @@ padding: 112px 0;
     background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-    url(/images/hero-bg.jpg);
+    url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -495,7 +494,10 @@ font-weight: 400;
 }
 }
 /* < !-- <============REVIEWS============>--> */
-.section {
+.container-plus {
+    padding-left: 15px;
+    padding-right: 15px;
+}.section {
 padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -619,9 +621,9 @@ flex-basis: calc((100% - 24px) / 2);
 }
 
 @media screen and (min-width:1158px) {
-.container {
-padding-top: 96px;
-    padding-bottom: 96px;
+.container-plus {
+    padding-top: 96px;
+        padding-bottom: 96px;
 }
 .team-title {
 font-weight: 700;
@@ -642,9 +644,14 @@ flex-basis: calc((100% - 72px) / 4);
 }
 }
 /* < !-- <============PORTFOLIO============>--> */
+
 .portfolio-section {
-padding: 96px 16px;
+    padding: 120px 0;
 }
+
+/* .portfolio-section {
+padding: 96px 16px;
+} */
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
@@ -729,9 +736,6 @@ flex-basis: calc((100% - 24px) / 2);
 }
 }
 @media screen and (min-width:1158px) {
-.portfolio-section {
-padding: 120px 0;
-}
 .portfolio-list {
 column-gap: 24px;
 row-gap: 48px;
@@ -945,7 +949,9 @@ margin: 0;
 }
 @media screen and (min-width:1158px) {
 .footer {
-padding: 100px 0;
+padding-top: 100px;
+padding-bottom: 100px;
+padding-left: 156px;
 }
 .footer-container {
 flex-direction: row;
